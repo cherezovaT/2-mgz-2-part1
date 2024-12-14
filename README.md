@@ -1,4 +1,5 @@
 # 2-mgz-2-chrezova
 
+## Install
 
-dfg"# 2-mgz-2-part1" 
+## Run
