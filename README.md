@@ -1,4 +1,4 @@
-# 2-mgz-2-chrezova
+# 2-mgz-2-cherezova
 
 ## Install
 
