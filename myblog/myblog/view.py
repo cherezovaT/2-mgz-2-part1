@@ -1,12 +1,24 @@
 from django.http import HttpResponse
 from  django.shortcuts import render
 
+MENU = {"Главная":"/", "Обо мне":"/about","Пост":"/post","Отзывы":"/feedback"}
+
 def main_page(request):
-    return render(request, "./index.html")
+    title = "Главная"
+    data = {"menu":MENU, "title":title}
+    return render(request, "./index.html", context=data)
 
 def about(request):
-    return render(request, "./about.html")
+    title = "Обо мне"
+    data = {"menu":MENU, "title":title}
+    return render(request, "./about.html", context=data)
 
-def post(request, id, category):
-    resp = f'Post id:{id}, category: {category}'
-    return HttpResponse(resp)
+def post(request):
+    title = "Пост"
+    data = {"menu":MENU, "title":title}
+    return render(request, "./post.html", context=data)
+
+def feedback(request):
+    title = "Отзывы"
+    data = {"menu":MENU, "title":title}
+    return render(request, "./feedback.html", context=data)

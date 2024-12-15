@@ -1,0 +1,136 @@
+/*/*.container{
+display:grid:
+grid-templates-areas:
+    ' header header'
+    'sidebar content' ;
+    gap: 10px;
+    grid-templates-colums: 150px; 1fr;
+    grid-templates-rows: 50px; 1fr;
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.content{
+    grid-area: content;
+}
+.item{
+    border: 1px solid black;
+    padding: 5px;
+}
+*/
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 30px;
+    background-color: #EF4036;
+}
+h1{
+    font-size: 3.5em;
+    margin: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 2em;
+    margin: 10px;
+    margin-left: 0px;
+}
+h3{
+    font-size: 1.5em;
+    margin: 20px;
+    margin-left: 0px;
+    font-weight: 400;
+    margin-left: 0px;
+}
+header{
+    text-align: center;
+}
+.wrapper1{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: left;
+    text-align: center;
+}
+.logo{
+    width: 50%;
+    align-items: end;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 40px;
+    margin-top: 0px;
+}
+button{
+    background-color: #F8C179;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 10px;
+    border: 1px solid rgb(31, 28, 28);
+    }
+button:hover{
+    background-color: #4B72A9;
+}
+button:active{
+    background-color: #EF4036;
+}
+.active{
+    background-color: #4B72A9;
+}
+.contacts{
+    background-color: #F8C179;
+    padding: 40px;
+    padding-right: 60px;
+    border-radius: 30px;
+    width:fit-content;
+}
+table{
+    border-collapse: collapse;
+    background-color: #F8C179;
+    border: 1px solid rgb(31, 28, 28);
+}
+td{
+    padding: 30px;
+    border: 1px solid rgb(31, 28, 28);
+}
+.first{
+    width: 300px;
+}
+a{
+    text-decoration: none;
+    color: #F8C179;
+}
+.color1{
+    background-color: #18181a;
+    color: #e6dcdc;
+}
+.color2{
+    background-color: #f7f6f1;
+}
+.color3{
+    background-color: #5c86c2;
+}
+.color4{
+    background-color: #ffbf6b;
+}

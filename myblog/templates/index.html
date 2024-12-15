@@ -1,10 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-"jghjghj
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block  content %}
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card color4">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <div class="card color4">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card color3">
+      <h2>Обо мне</h2>
+      <div class="fakeimg" style="height:100px;"></div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card color1">
+      <h2>Подписывайся</h2>
+      <ul>
+        <li>ВК: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+        <li>Тг-канал: <a href="https://t.me/chrtaa">@chrtaa</a></li>
+        <li>Behance: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+        <li>Artstation: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+      </ul>
+    </div>
+    <div class="card color1">
+      <h2>Контакты</h2>
+      <ul>
+        <li>Телеграм: <a href="https://t.me/chrtaa">@chrtaa</a></li>
+        <li>Почта: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+{% endblock %}

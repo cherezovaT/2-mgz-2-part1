@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{%static 'css/base.css'%}">
+    <link rel="stylesheet" href="{%static 'css/index.css'%}">
+</head>
+<body>
+
+
+
+<div class="container">
+
+    <header>
+     <div class="wrapper1">
+          <div class="logo">
+            <img src="{%static 'logo.jpg'%}" id="logo">
+            </div>
+        <div class="name">
+
+            <h1>Тася Черезова</h1>
+            <h3>Группа: 1-МГЗ-2</h3>
+        </div>
+
+    </div>
+        <nav>
+            {% for key, value in menu.items %}
+            <button onclick="document.location='{{value}}'">{{key}}</button>
+            {% endfor %}
+        </nav>
+    </header>
+    <!--
+    <div class="sidebar item">
+        <ul>
+            {% for key, value in menu.items %}
+            <li> <a href="{{value}}">{{key}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>-->
+    <div class="content item">
+        {% block  content %}
+        {% endblock %}
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

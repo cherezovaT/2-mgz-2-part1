@@ -21,7 +21,6 @@ from .view import *
 urlpatterns = [
     path('', main_page),
     path('about/', about),
-    path('post/<int:id>/<str:category>/', post),
-    path('post/<int:id>/', post),
     path('post/', post),
+    path('feedback/', feedback),
 ]
