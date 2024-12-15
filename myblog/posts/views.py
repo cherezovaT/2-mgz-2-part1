@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import News,Comment
 
-MENU = {"Главная":"/", "О блоге":"/about","Блог":"/posts","Отзывы":"/feedback","Comm":"/posts/comments" }
+MENU = {"Главная":"/", "О блоге":"/about","Блог":"/posts","Комментарии":"./comments"}
 
 def news(request):
     new = News.objects.all()
