@@ -64,12 +64,16 @@ header{
     justify-content: center;
     width: 50%;
     align-items: left;
-    text-align: center;
+    text-align: left;
+    padding-top:30px;
 }
 .logo{
     width: 50%;
-    align-items: end;
-    text-align: center;
+    align-items: right;
+    text-align: right;
+}
+#logo{
+    width: 400px;
 }
 nav{
     display: flex;
@@ -107,15 +111,17 @@ button:active{
 }
 table{
     border-collapse: collapse;
-    background-color: #F8C179;
-    border: 1px solid rgb(31, 28, 28);
+    width: 80%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 15px 15px;
 }
 td{
-    padding: 30px;
+    padding: 40px;
     border: 1px solid rgb(31, 28, 28);
 }
 .first{
-    width: 300px;
+    width: 20%;
 }
 a{
     text-decoration: none;
@@ -127,10 +133,13 @@ a{
 }
 .color2{
     background-color: #f7f6f1;
+    border: 1px solid rgb(31, 28, 28);
 }
 .color3{
     background-color: #5c86c2;
+    border: 1px solid rgb(31, 28, 28);
 }
 .color4{
     background-color: #ffbf6b;
+    border: 1px solid rgb(31, 28, 28);
 }
