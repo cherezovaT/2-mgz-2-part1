@@ -16,7 +16,11 @@ def add_comment(request):
     return render(request, "./addfeed.html", context=data)
 
 def thanks(request):
-
+    user_name = request.POST["user_name"]
+    email = request.POST["email"]
+    comment = request.POST["comment"]
+    post = News.objects.get(pk=request.POST["post"])
+    Comment.objects.create(name=user_name, email=email, text=comment, new=post)
     title = "Спасибо,"
-    data = {"menu":MENU, "title":title}
+    data = {"menu":MENU, "title":title, 'user_name':user_name}
     return render(request, "./thanks.html", context=data)
