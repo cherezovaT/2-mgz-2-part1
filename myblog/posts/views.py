@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import News,Comment
 
+
 MENU = {"Главная":"/", "О блоге":"/about","Блог":"/posts","Комментарии":"./comments"}
 
 def news(request):
@@ -22,6 +23,7 @@ def comments(request):
     data = {"menu":MENU, "title":title, "comment":comment, 'new':new}
     return render(request, "./comments.html", context=data)
 
+
 def thanks(request):
     user_name = request.POST["user_name"]
     email = request.POST["email"]
@@ -31,3 +33,6 @@ def thanks(request):
     title = "Спасибо,"
     data = {"menu":MENU, "title":title, 'user_name':user_name}
     return render(request, "./thanks.html", context=data)
+
+
+

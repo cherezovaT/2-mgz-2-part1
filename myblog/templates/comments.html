@@ -6,14 +6,6 @@
   <h2>{{title}}</h2>
   <img src="{%static 'arr.png'%}" id="arr">
 </div>
-{{new}}
-Пост
-{% for p in new %}
-    <select name="post">
-
-            <option value="{{p.id}}">{{ p.title }}</option>
-
-    </select>
 
 <div class="row">
 {% for el in comment %}
@@ -30,7 +22,6 @@
 {% endfor %}
 </div>
 
-{% endfor %}
 <div class="row">
 {% for el in comment %}
 <div class="card color2">
