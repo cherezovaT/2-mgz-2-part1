@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block  content %}
+
+<div class="title">
+  <h2>{{title}}</h2>
+  <img src="{%static 'arr.png'%}" id="arr">
+</div>
+{{new}}
+Пост
+{% for p in new %}
+    <select name="post">
+
+            <option value="{{p.id}}">{{ p.title }}</option>
+
+    </select>
+
+<div class="row">
+{% for el in comment %}
+    {% if el.new == p.title %}
+<div class="card color2">
+        <div class="feed">
+            <h2>Имя:{{el.name}}</h2>
+            <h4>Пост: {{el.new}}</h4>
+            <h4>Почта:{{el.email}}</h4>
+            <p>Комментарий:{{el.text}}</p>
+        </div>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+
+{% endfor %}
+<div class="row">
+{% for el in comment %}
+<div class="card color2">
+        <div class="feed">
+            <h2>Имя:{{el.name}}</h2>
+            <h4>Пост: {{el.new}}</h4>
+            <h4>Почта:{{el.email}}</h4>
+            <p>Комментарий:{{el.text}}</p>
+        </div>
+</div>
+
+{% endfor %}
+</div>
+
+{% endblock %}

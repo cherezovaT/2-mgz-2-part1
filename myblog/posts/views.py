@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import News,Comment
 
-MENU = {"Главная":"/", "О блоге":"/about","Блог":"/posts","Отзывы":"/feedback"}
+MENU = {"Главная":"/", "О блоге":"/about","Блог":"/posts","Отзывы":"/feedback","Comm":"/posts/comments" }
 
 def news(request):
     new = News.objects.all()
@@ -14,6 +14,13 @@ def add_comment(request):
     title = "Добавить комментарий"
     data = {"menu":MENU, "title":title, "new":new}
     return render(request, "./addfeed.html", context=data)
+
+def comments(request):
+    comment = Comment.objects.all()
+    new = News.objects.values('id','title')
+    title = "Комментарии"
+    data = {"menu":MENU, "title":title, "comment":comment, 'new':new}
+    return render(request, "./comments.html", context=data)
 
 def thanks(request):
     user_name = request.POST["user_name"]
