@@ -6,7 +6,9 @@
   <h2>{{title}}</h2>
   <img src="{%static 'arr.png'%}" id="arr">
 </div>
-
+<div class="footer">
+  <button onclick="document.location='/posts/addfeed/'">!!! Добавить комментарий !!!</button>
+</div>
 <div class="row">
 {% for el in comment %}
     {% if el.new == p.title %}
