@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-*/
-
 .card ul {
   list-style-type: square ;
   margin-left: -20px;
@@ -18,12 +16,6 @@ body {
   padding: 20px;
 }
 
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-}
-
 .leftcolumn {
   float: left;
   width: 75%;
@@ -33,6 +25,7 @@ body {
   float: left;
   width: 25%;
   padding-left: 20px;
+  margin-top:-10px;
 }
 
 .fakeimg {
@@ -42,22 +35,45 @@ body {
 
 .card {
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .post {
-  padding: 20px;
-  margin-top: 20px;
+  width:100%;
+  margin-top: 0px;
+  text-align:left;
+  text-transform: none;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+#postimg{
+    height: 230px;
+    margin-right: 40px;
+    margin-left:-10px;
+}
+.cardtext {
+  width: 650px;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .footer {
   padding: 20px;
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
+}
+.title {
+  padding: 20px;
+  text-align: center;
+  margin-top: 13%;
+  margin-bottom: 5%;
+  font-size: 5em;
+}
+#arr{
+width:100px;
+margin-top: 5%;
+margin-bottom: 5%;
+align-items:center;
 }

@@ -29,9 +29,11 @@ body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 30px;
     background-color: #EF4036;
+    margin:0px;
+    padding:0px;
 }
+
 h1{
     font-size: 3.5em;
     margin: 20px;
@@ -45,9 +47,14 @@ h2{
 }
 h3{
     font-size: 1.5em;
-    margin: 20px;
-    margin-left: 0px;
+    margin: 10px;
     font-weight: 400;
+    margin-left: 0px;
+}
+h4{
+    font-size: 1em;
+    margin: 15px;
+    font-weight: 600;
     margin-left: 0px;
 }
 header{
@@ -56,7 +63,6 @@ header{
 .wrapper1{
     display: flex;
     flex-direction: row;
-    margin: 20px;
 }
 .name{
     display: flex;
@@ -68,19 +74,20 @@ header{
     padding-top:30px;
 }
 .logo{
-    width: 50%;
-    align-items: right;
-    text-align: right;
+    width: 20%;
+    margin:auto;
 }
 #logo{
-    width: 400px;
+    width: 360px;
+    padding-bottom:20px;
 }
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 40px;
-    margin-top: 0px;
+    margin: auto;
+    margin-bottom: 40px;
+    width:60%;
 }
 button{
     background-color: #F8C179;
@@ -104,24 +111,27 @@ button:active{
 }
 .contacts{
     background-color: #F8C179;
-    padding: 40px;
+    padding:px;
     padding-right: 60px;
     border-radius: 30px;
     width:fit-content;
 }
 table{
     border-collapse: collapse;
-    width: 80%;
+    width: 70%;
     margin: auto;
     border-collapse: separate;
     border-spacing: 15px 15px;
 }
 td{
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     border: 1px solid rgb(31, 28, 28);
 }
 .first{
-    width: 20%;
+    width: 25%;
 }
 a{
     text-decoration: none;
