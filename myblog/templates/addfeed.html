@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block  content %}
+
+<div class="title">
+  <h2>{{title}}</h2>
+  <img src="{%static 'arr.png'%}" id="arr">
+</div>
+
+<form action="{% url 'thanks'%}" method="POST">
+    {% csrf_token %}
+    <select name="posts">
+        {% for p in posts %}
+        <option value="{{p.id}}"> {{p.title}} </option>
+        {% endfor %}
+    </select>
+    <lable for="name"> </lable>
+    <input name="name" id="name">
+    <lable for="email"> </lable>
+    <input name="email" id="email">
+    <lable for="feed"> </lable>
+    <input name="feed" id="feed">
+    <button type="submit">Отправить</button>
+</form>
+
+{% endblock %}
