@@ -16,6 +16,7 @@ def add_comment(request):
     return render(request, "./addfeed.html", context=data)
 
 def thanks(request):
+
     title = "Спасибо,"
     data = {"menu":MENU, "title":title}
     return render(request, "./thanks.html", context=data)
