@@ -81,20 +81,6 @@ margin-top: 5%;
 margin-bottom: 5%;
 align-items:center;
 }
-
-.form{
-    margin: auto;
-    margin-bottom: 40px;
-    width:60%;
-    color:red;
-}
-input{
-height:30px;
-width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-input[type=text] {
-
+.postt{
+mardin-top:10%;
 }

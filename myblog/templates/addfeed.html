@@ -9,18 +9,18 @@
 
 <form action="{% url 'thanks'%}" method="POST" class="form">
     {% csrf_token %}
-    Пост
+    Пост<br>
     <select name="post">
         {% for p in new %}
             <option value="{{p.id}}">{{ p.title }}</option>
         {% endfor %}
     </select ><br>
-    <label for="user_name">Имя</label>
+    <label for="user_name">Имя</label><br>
     <input name="user_name" id="user_name"><br>
-    <label for="email">Почта</label>
+    <label for="email">Почта</label><br>
     <input name="email" id="email"><br>
-    <label for="comment">Комментарий</label>
-    <input name="comment" id="comment"><br>
+    <label for="comment">Комментарий</label><br>
+    <textarea name="comment" id="comment"></textarea><br><br>
     <button type="submit">Отправить</button>
 </form>
 

@@ -1,0 +1,29 @@
+form{
+    margin: auto;
+    margin-bottom: 15%;
+    width:30%;
+    text-align:center;
+    margin-top: -5%;
+}
+input{
+    height:40px;
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea{
+    height:120px;
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+select{
+    height:40px;
+    width:60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
