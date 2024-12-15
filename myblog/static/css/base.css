@@ -44,6 +44,7 @@ h2{
     font-size: 2em;
     margin: 10px;
     margin-left: 0px;
+    text-transform: uppercase;
 }
 h3{
     font-size: 1.5em;
@@ -78,8 +79,8 @@ header{
     margin:auto;
 }
 #logo{
-    width: 360px;
-    padding-bottom:20px;
+    width: 380px;
+    padding-bottom:30px;
 }
 nav{
     display: flex;
@@ -96,6 +97,7 @@ button{
     padding-right: 30px;
     border: 0px;
     font-size: 1em;
+    font-weight: 500;
     text-transform: uppercase;
     margin: 10px;
     border: 1px solid rgb(31, 28, 28);
@@ -152,4 +154,13 @@ a{
 .color4{
     background-color: #ffbf6b;
     border: 1px solid rgb(31, 28, 28);
+}
+.card ul {
+  list-style-type: square ;
+  margin-left: -20px;
+}
+li {
+  list-style-type: none ;
+  margin-bottom: 10px;
+  margin-left: -20px;
 }
