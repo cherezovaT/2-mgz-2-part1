@@ -15,3 +15,6 @@ source env\Scripts\activate
 ## Run
 1. Для разработки:
 >python manage.py runserver
+
+## Admin
+pass: 0000
