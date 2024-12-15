@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block  content %}
+
+<div class="title">
+  <h2>{{title}} </h2>
+  <img src="{%static 'arr.png'%}" id="arr">
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+      {% for el in posts %}
+    <button class="post" onclick="document.location='/post'">
+        <div class="card">
+          <h2>{{el.title}}</h2>
+          <h4>{{el.description}} / {{el.date}} </h4>
+          <p>{{el.text}}</p>
+        </div>
+      </button>
+      {% endfor %}
+  </div>
+    <div class="rightcolumn">
+    <div class="card color2">
+      <h2>Тася Черезова</h2>
+      <h4>Группа: 1-МГЗ-2</h4>
+      <p>Сделанный на скорую руку, блог про цифровые технологии в дизайне. Немного странный. Отнеситесь с пониманием)</p>
+    </div>
+    <div class="card color1">
+      <h2>Подписывайся</h2>
+      <ul>
+        <li>ВК: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+        <li>Тг-канал: <a href="https://t.me/chrtaa">@chrtaa</a></li>
+        <li>Behance: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+        <li>Artstation: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+      </ul>
+    </div>
+    <div class="card color1">
+      <h2>Контакты</h2>
+      <ul>
+        <li>Телеграм: <a href="https://t.me/chrtaa">@chrtaa</a></li>
+        <li>Почта: <a href="mailto:chertaas@yandex.ru">chertaas@yandex.ru</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>to be continued...</h2>
+</div>
+
+{% endblock %}

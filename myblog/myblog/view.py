@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from  django.shortcuts import render
 
-MENU = {"Главная":"/", "О блоге":"/about","Пост":"/post","Отзывы":"/feedback"}
+MENU = {"Главная":"/", "О блоге":"/about","Блог":"/posts","Отзывы":"/feedback"}
 
 def main_page(request):
     title = "Главная"
@@ -18,7 +18,9 @@ def post(request):
     data = {"menu":MENU, "title":title}
     return render(request, "./post.html", context=data)
 
-def feedback(request):
-    title = "Отзывы"
+def posts(request):
+    title = "<Блог>"
     data = {"menu":MENU, "title":title}
-    return render(request, "./feedback.html", context=data)
+    return render(request, "./posts.html", context=data)
+
+
